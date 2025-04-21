@@ -1,0 +1,114 @@
+:root{
+--yellow--:hsl(47, 88%, 63%);
+--White--: hsl(0, 0%, 100%);
+--Gray--500--: hsl(0, 0%, 42%);
+--Gray-950: hsl(0, 0%, 7%);
+--Font-size--paragraph: 16px;
+--Family--: [Figtree](https://fonts.google.com/specimen/Figtree)
+--Weight-1--: 500; 
+--weight-2--:800;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background: var(--yellow--);
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+   justify-content: center;
+   align-items: center;
+   
+}
+.container{
+    width: 24rem;
+    height: 33.5rem;
+    border: 2px solid black;
+    background: var(--White--);
+    box-shadow: 10px 10px 1px rgba(0, 0, 0, 1);
+   border-radius: 15px;
+   max-width: 400px;
+   overflow: hidden;
+}
+svg{
+ 
+    border-radius: 15px;
+   margin: 20px;
+   display: block;
+
+}
+.card-body{
+    padding:20px;
+}
+button{
+    height: 30px;
+    width:80px;
+    margin-top: 5px;
+    color: var(--Gray--950--);
+    background: var(--yellow--);
+    border: none;
+    border-radius: 5px;
+    font-weight: var(--weight-2--);
+    font-size: 12px;
+    transition: 0.3s;
+
+}
+button:hover{
+    background: var(--White--);
+    color: black;
+    border: 1px solid black;
+}
+#first{
+    font-size: 16px;
+    margin-top:5px;
+    color: var(--Gray--950--);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: var(--weight-1--);
+}
+h1{
+    font-size: 24px;
+    margin: 15px 0 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#second{
+    margin: 15px 0 10px ;
+    font-size: 16px;
+    color: var(--Gray--500--);
+    line-height: 1.4;
+    font-family:sans-serif;
+}
+img{
+    width: 36px;
+    height: auto;
+    border-radius: 50%;
+    margin: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+h2{
+    font-size: 0.95rem;
+    display: inline-block;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.attribution{
+    display: inline-block;
+}
+@media(max-width:375px){
+    .container{
+        margin: 10px;
+        box-shadow: none;
+        border-radius: 10px;
+    }
+    .card-body{
+        padding: 15px;
+    }
+    .first{
+        font-size: 1.1rem;
+    }
+ .second{
+    font-size: 0.9rem;
+ }   
+}
